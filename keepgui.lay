@@ -1,0 +1,24 @@
+LAYOUT(keepguiLayout, 672, 364)
+	ITEM(Label, dv___0, SetLabel(t_("Backup location:")).LeftPosZ(4, 84).TopPosZ(4, 19))
+	ITEM(EditString, ebDBD, HSizePosZ(92, 32).TopPosZ(4, 19))
+	ITEM(Button, btnBupLocation, SetFont(StdFont().Bold()).RightPosZ(8, 20).TopPosZ(4, 20))
+	ITEM(ArrayCtrl, acBups, AskRemove(false).AutoHideSb(true).HSizePosZ(4, 4).VSizePosZ(28, 4))
+END_LAYOUT
+
+LAYOUT(bupdlgLayout, 332, 136)
+	ITEM(Label, dv___0, SetLabel(t_("Dir:")).SetAlign(ALIGN_RIGHT).LeftPosZ(8, 28).TopPosZ(8, 19))
+	ITEM(EditString, ebDir, LeftPosZ(40, 260).TopPosZ(8, 19))
+	ITEM(Button, btnSelDir, SetLabel(t_("..")).LeftPosZ(304, 16).TopPosZ(12, 15))
+	ITEM(Label, dv___3, SetLabel(t_("F-ex:")).SetAlign(ALIGN_RIGHT).LeftPosZ(8, 28).TopPosZ(36, 19))
+	ITEM(EditString, ebF, LeftPosZ(40, 260).TopPosZ(36, 19))
+	ITEM(Label, dv___5, SetLabel(t_("D-ex:")).SetAlign(ALIGN_RIGHT).LeftPosZ(8, 28).TopPosZ(64, 16))
+	ITEM(EditString, ebD, LeftPosZ(40, 260).TopPosZ(64, 19))
+	ITEM(Button, btnOK, SetLabel(t_("OK")).LeftPosZ(164, 60).TopPosZ(100, 20))
+	ITEM(Button, btnCancel, SetLabel(t_("Cancel")).LeftPosZ(240, 60).TopPosZ(100, 20))
+END_LAYOUT
+
+LAYOUT(bupdataLayout, 760, 44)
+	ITEM(Button, btnClose, SetLabel(t_("Close")).RightPosZ(12, 60).BottomPosZ(12, 20))
+	ITEM(Button, btnCopy, SetLabel(t_("Copy/Extract ..")).RightPosZ(84, 92).BottomPosZ(12, 20))
+END_LAYOUT
+

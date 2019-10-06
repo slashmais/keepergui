@@ -1,0 +1,25 @@
+description "as the name says\377";
+
+uses
+	CtrlLib,
+	utilfuncs,
+	dbsqlite3,
+	compression,
+	HoM,
+	qdconfig;
+
+file
+	main.cpp,
+	keepergui.h,
+	keepergui.cpp,
+	keepgui.lay,
+	keepgui.iml,
+	dbk.h,
+	dbk.cpp,
+	keepif.h,
+	keepif.cpp,
+	bupdata.cpp;
+
+mainconfig
+	"" = "GUI";
+
